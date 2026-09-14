@@ -8,6 +8,14 @@ The initial focus is supplier document reconciliation—delivery notes, invoices
 
 > **Status: research and architecture.** This repository currently contains the engineering dossier and product roadmap. The application, API, model integrations, and deployment packages are not implemented yet. No production accuracy or throughput is claimed.
 
+## MVP design
+
+**[Read the MVP system design](docs/product/MVP_SYSTEM_DESIGN.md)** — a proposed three-week implementation plan for invoice upload, extraction with source evidence, human review, and approved JSON/CSV export.
+
+The design includes screens, architecture, field and API contracts, the data model, worker recovery, deployment assumptions, release criteria, and a day-by-day backlog. Delivery-note linking is a stretch milestone; automatic approval and full reconciliation follow measured validation.
+
+The MVP uses a GLM-OCR adapter as its implementation baseline while retaining the dossier's broader model evaluation strategy. This is a design milestone; implementation has not started.
+
 ## Engineering dossier
 
 Read the full French-language dossier:
@@ -73,7 +81,7 @@ Progress depends on access to representative documents, reliable annotations, re
 
 ## Getting started
 
-Start with the [engineering dossier](docs/architecture/OCR_99_Dossier_ingenierie_2026-09-14.md), particularly the proposed decision, accuracy contract, architecture, and execution plan.
+Start with the [MVP system design](docs/product/MVP_SYSTEM_DESIGN.md) for the build plan. Read the [engineering dossier](docs/architecture/OCR_99_Dossier_ingenierie_2026-09-14.md), particularly the proposed decision, accuracy contract, architecture, and execution plan.
 
 The fine-tuning section includes example code and configuration. These examples are embedded in the document; they are not an installed SDK or a validated training environment. There is no application installation command yet.
 
